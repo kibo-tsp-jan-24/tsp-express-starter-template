@@ -1,9 +1,7 @@
+const bcrypt = require('bcrypt')
 const request = require('supertest')
-
-const { server, prisma } = require('./app')
-
-// Sample tests.  Note that this does not comprehensively test the application.
-// These are just provided as inspiration for you to add your own unit tests.
+const server = require('../../../src/index')
+const prisma = require('../../../src/config').dbConfig.client
 
 // Login Route
 describe('POST /login', () => {
@@ -12,7 +10,7 @@ describe('POST /login', () => {
       id: 1,
       name: 'John Doe',
       email: 'johndoe@example.com',
-      password: 'secret',
+      password: await bcrypt.hash('secret', 10),
     }
     prisma.user.findUnique = jest.fn().mockResolvedValue(mockUser)
 
@@ -21,6 +19,7 @@ describe('POST /login', () => {
       password: 'secret',
     })
 
+    expect(prisma.user.findUnique).toHaveBeenCalled()
     expect(res.statusCode).toBe(302)
     expect(res.headers.location).toBe('/user/1/posts')
   })

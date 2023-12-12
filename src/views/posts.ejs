@@ -1,7 +1,4 @@
 <%- include('head', { title: 'Posts' }) -%>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a href="/logout" class="btn btn-link ml-auto">Logout</a>
-</nav>
 <div class="container">
   <div class="row">
     <div class="row justify-content-center">
@@ -36,6 +33,7 @@
           </div>
           <!-- Author -->
           <input type="hidden" name="authorEmail" value="<%= author.email %>">
+          <input type="hidden" name="authorId" value="<%= author.id %>">
           <!-- Submit Button -->
           <div class="mb-3">
             <button type="submit" class="btn btn-primary">Submit Post</button>
