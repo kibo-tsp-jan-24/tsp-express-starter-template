@@ -22,6 +22,12 @@ tasks with different types of endpoints (GET, POST, etc.)
 
 ## Getting started
 
+If you don't have [`pnpm`](https://pnpm.io/) installed, install it using this command.
+
+```bash
+npm install -g pnpm
+```
+
 ### 1. Download example and install dependencies
 
 Clone this repository:
