@@ -34,7 +34,7 @@ Install npm dependencies:
 
 ```bash
 cd tsp-express-starter-template
-pnpm install
+npm install
 ```
 
 ### 2. Create and seed the database
