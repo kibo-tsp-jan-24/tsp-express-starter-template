@@ -26,7 +26,9 @@ tasks with different types of endpoints (GET, POST, etc.)
 
 Clone this repository:
 
+```bash
 git clone git@github.com:kiboschool/tsp-express-starter-template.git
+```
 
 Install npm dependencies:
 
