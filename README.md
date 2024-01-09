@@ -22,7 +22,7 @@ tasks with different types of endpoints (GET, POST, etc.)
 
 ## Getting started
 
-If you don't have [`pnpm`](https://pnpm.io/) installed, install it using this command.
+If you don't have [pnpm](https://pnpm.io/) installed, install it using this command.
 
 ```bash
 npm install -g pnpm
@@ -40,7 +40,7 @@ Install npm dependencies:
 
 ```bash
 cd tsp-express-starter-template
-npm install
+pnpm install
 ```
 
 ### 2. Create and seed the database
@@ -87,7 +87,7 @@ pnpm run format:check
 Apply the formatting recommendations using this command:
 
 ```bash
-npm run format:write
+pnpm run format:write
 ```
 
 **Prettier configuration is stored in the `.prettierrc.json` file.**
