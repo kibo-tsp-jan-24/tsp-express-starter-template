@@ -107,27 +107,8 @@ pnpm run lint:fix
 Run unit tests with this command:
 
 ```bash
-pnpm run tests
+pnpm run test
 ```
 
 > Note that the provided test cases do not fully test the application. They are
 > provided as examples and for inspiration.
-
-### Deploying To Render
-
-You can deploy this application to Render using the following steps:
-
-1. Once you have pushed the remote to a GitHub repository, go to render.com and
-   select 'Get Started For Free'.
-2. Log in using your GitHub account.
-3. Select the option to deploy a new Web Service
-4. Choose the option to 'Build and deploy from a Git repository'. If you don't
-   see your repository in the list, select the option to "Configure account" on
-   the right-hand side of the screen. You can then select which repo you would
-   like to link.
-5. Click on 'Connect' to the right of the correct repository.
-6. Choose a name and region of your choice. Since you are using `npm` locally, I
-   recommend using `npm` as the 'Build Command'
-7. For the 'Start Command' enter `npm run dev`.
-8. Select the Free Plan option.
-9. Click 'Create Web Service'.
